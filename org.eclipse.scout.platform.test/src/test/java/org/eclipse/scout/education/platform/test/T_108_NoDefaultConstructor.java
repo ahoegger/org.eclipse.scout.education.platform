@@ -10,6 +10,7 @@
  ******************************************************************************/
 package org.eclipse.scout.education.platform.test;
 
+import org.eclipse.scout.commons.Assertions.AssertionException;
 import org.eclipse.scout.rt.platform.ApplicationScoped;
 import org.eclipse.scout.rt.platform.BEANS;
 import org.eclipse.scout.rt.testing.platform.runner.PlatformTestRunner;
@@ -19,7 +20,7 @@ import org.junit.runner.RunWith;
 @RunWith(PlatformTestRunner.class)
 public class T_108_NoDefaultConstructor {
 
-  @Test
+  @Test(expected = AssertionException.class)
   public void test() {
     BEANS.get(T_108_BeanInterface.class);
   }
