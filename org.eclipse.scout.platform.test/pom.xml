@@ -1,4 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <artifactId>org.eclipse.scout.education.platform.test</artifactId>
   <name>PlatformTests</name>
@@ -9,9 +10,28 @@
     <version>1.0.0-SNAPSHOT</version>
   </parent>
   <dependencies>
+<!--     <dependency> -->
+<!--       <groupId>org.eclipse.scout.rt</groupId> -->
+<!--       <artifactId>org.eclipse.scout.rt.platform.test</artifactId> -->
+<!--     </dependency> -->
     <dependency>
-      <groupId>org.eclipse.scout.rt</groupId>
-      <artifactId>org.eclipse.scout.rt.platform.test</artifactId>
+    <groupId>org.eclipse.scout.rt</groupId>
+      <artifactId>org.eclipse.scout.rt.client.test</artifactId>
     </dependency>
+
+<!--         <dependency> -->
+<!--       <groupId>org.eclipse.scout.rt</groupId> -->
+<!--       <artifactId>org.eclipse.scout.rt.client</artifactId> -->
+<!--     </dependency> -->
+
+    <!-- Test Dependencies -->
+<!--     <dependency> -->
+<!--       <groupId>org.eclipse.scout.rt</groupId> -->
+<!--       <artifactId>org.eclipse.scout.rt.shared.test</artifactId> -->
+<!--     </dependency> -->
+<!--     <dependency> -->
+<!--       <groupId>org.apache.commons</groupId> -->
+<!--       <artifactId>commons-math</artifactId> -->
+<!--     </dependency> -->
   </dependencies>
 </project>

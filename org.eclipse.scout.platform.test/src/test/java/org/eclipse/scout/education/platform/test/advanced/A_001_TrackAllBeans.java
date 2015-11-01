@@ -8,7 +8,7 @@
  * Contributors:
  *     BSI Business Systems Integration AG - initial API and implementation
  ******************************************************************************/
-package org.eclipse.scout.education.platform.test.debug;
+package org.eclipse.scout.education.platform.test.advanced;
 
 import java.util.List;
 
@@ -24,7 +24,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 
 @RunWith(PlatformTestRunner.class)
-public class D_001_TrackAllBeans {
+public class A_001_TrackAllBeans {
 
   @Test
   public void test() {
@@ -32,7 +32,7 @@ public class D_001_TrackAllBeans {
   }
 
   @IgnoreBean
-  public static class D_001_PlatformListener implements IPlatformListener {
+  public static class A_001_PlatformListener implements IPlatformListener {
     @Override
     public void stateChanged(PlatformEvent event) {
       if (event.getState() == IPlatform.State.BeanManagerValid) {
